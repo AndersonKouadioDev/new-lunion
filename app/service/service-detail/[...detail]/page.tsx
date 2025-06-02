@@ -1,13 +1,14 @@
 import React from "react";
 import { service } from "@/data/service";
 import Content from "./Content";
-
 interface IProps {
-  params: { detail: string };
+  params: Promise<{ detail: string }>;
 }
 
 const Page = async ({ params }: IProps) => {
-  const final = service.find((item) => item.id === Number(params.detail));
+  const { detail } = await params;
+  
+  const final = service.find((item) => item.id === Number(detail));
 
   if (!final) {
     return (
