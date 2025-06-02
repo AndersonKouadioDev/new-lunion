@@ -3,7 +3,7 @@ import { ArrowRight, Phone, Award, Users, ArrowUp } from 'lucide-react';
 
 const AboutSection = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[600px] bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
@@ -51,7 +51,7 @@ const AboutSection = () => {
               
               {/* Experience badge */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex flex-col items-center justify-center text-white shadow-xl">
-                <div className="text-3xl font-bold">25</div>
+                <div className="text-3xl font-bold">1</div>
                 <div className="text-xs text-center font-medium">Years Experience</div>
               </div>
             </div>

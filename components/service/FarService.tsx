@@ -14,7 +14,7 @@ export default function FarService() {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-4 relative overflow-hidden">
+    <div className="bg-gray-50 py-16 px-4 relative">
       <div className="space-y-4 text-center py-28">
         <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
           Le contenu de nos
@@ -23,16 +23,16 @@ export default function FarService() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Side - Image */}
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl">
+          <div className="">
+            <div className="relative lg:sticky lg:top-20 rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/assets/images/Développement web.jpg"
                 alt="Developer working on computer"
-                className="w-full h-96 lg:h-[500px] object-cover"
-                width={800}
-                height={500}
+                className="w-full h-full lg:h-[500px] object-cover"
+                width={735}
+                height={429}
               />
             </div>
             <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full opacity-20"></div>
@@ -42,20 +42,18 @@ export default function FarService() {
           </div>
 
           {/* Right Side - Services List */}
-          <div className="space-y-8">
-            <div className="space-y-3">
-              {service.map((item) => (
-                <ServiceCard
-                  key={item.id}
-                  id={item.id}
-                  description={item.description}
-                  imageLink={item.imageLink}
-                  service={item.service}
-                  hoveredService={hoveredService}
-                  setHoveredService={setHoveredService}
-                />
-              ))}
-            </div>
+          <div className="space-y-3">
+            {service.map((item) => (
+              <ServiceCard
+                key={item.id}
+                id={item.id}
+                description={item.description}
+                imageLink={item.imageLink}
+                service={item.service}
+                hoveredService={hoveredService}
+                setHoveredService={setHoveredService}
+              />
+            ))}
           </div>
         </div>
       </div>

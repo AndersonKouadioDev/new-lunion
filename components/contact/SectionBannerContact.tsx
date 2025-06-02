@@ -19,7 +19,7 @@ export default function SectionBannerContact() {
       <div className="z-10">
         <h1 className="text-4xl md:text-5xl font-bold"></h1>
         <div className="mt-4 text-lg flex justify-center items-center gap-2">
-          <span className="text-gray-300">Contact</span>
+          <span className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg">Contact</span>
          
           <span className="text-white font-medium"></span>
         </div>

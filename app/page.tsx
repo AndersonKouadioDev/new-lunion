@@ -1,4 +1,3 @@
-
 import AboutSection from "@/components/home/AboutSection";
 import Hero from "@/components/home/Hero";
 import ITProjects from "@/components/home/ITProject";
@@ -11,12 +10,12 @@ import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
 export default function Home() {
   return (
     <div className="">
-      < Hero/>
+      <Hero />
       <ServiceServices />
       <AboutSection />
       <WhyChooseUsSection />
       <StatsSection />
-      <TeamSection/>
+      <TeamSection />
       <Testimonials />
       <ITProjects />
       <PartnerSection />

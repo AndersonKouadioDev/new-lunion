@@ -1,21 +1,17 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
-import logo from "../../public/assets/images/logo.png"
-import Image from 'next/image';
+import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "../../public/assets/images/logo.png";
+import Image from "next/image";
 export default function FooterBanner() {
   return (
     <div className="bg-slate-800 text-white py-4 px-6 relative overflow-hidden mt-8">
       {/* Diagonal purple accent */}
       <div className="absolute left-0 top-0 bottom-0 w-80 bg-gradient-to-r from-purple-600 to-purple-500 transform -skew-x-12 -translate-x-20"></div>
-      
+
       {/* Logo section */}
       <div className="relative z-10 flex items-center justify-between">
-       <div className='h-5 w-40'>
-        <Image
-        src={logo}
-        alt='logo-banner'
-        className='object-cover'
-        />
-       </div>
+        <div className="h-5 w-40">
+          <Image src={logo} alt="logo-banner" className="object-cover" />
+        </div>
 
         {/* Contact info */}
         <div className="flex items-center space-x-8">
@@ -25,7 +21,9 @@ export default function FooterBanner() {
               <Phone className="w-6 h-6 text-purple-600" />
             </div>
             <div>
-              <p className="text-purple-300 text-sm font-medium">Appelez-nous rapidement:</p>
+              <p className="text-purple-300 text-sm font-medium">
+                Appelez-nous rapidement:
+              </p>
               <p className="text-white font-semibold">+190-8800-0393</p>
             </div>
           </div>
@@ -36,7 +34,9 @@ export default function FooterBanner() {
               <Mail className="w-6 h-6 text-purple-600" />
             </div>
             <div>
-              <p className="text-purple-300 text-sm font-medium">Envoyez-nous un mail sur:</p>
+              <p className="text-purple-300 text-sm font-medium">
+                Envoyez-nous un mail sur:
+              </p>
               <p className="text-white font-semibold">info@lunionlab.com</p>
             </div>
           </div>
@@ -47,8 +47,12 @@ export default function FooterBanner() {
               <MapPin className="w-6 h-6 text-purple-600" />
             </div>
             <div>
-              <p className="text-purple-300 text-sm font-medium">Visitez l&apos emplacement:</p>
-              <p className="text-white font-semibold">Abidjan, Côte d&apos ivoire </p>
+              <p className="text-purple-300 text-sm font-medium">
+                Visitez l&apos emplacement:
+              </p>
+              <p className="text-white font-semibold">
+                Abidjan, Côte d&apos ivoire{" "}
+              </p>
             </div>
           </div>
         </div>

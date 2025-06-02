@@ -1,6 +1,6 @@
 // components/SectionBanner.tsx
-import Image from 'next/image';
-import bannerBg from '@/public/assets/images/service1.jpg'; 
+import Image from "next/image";
+import bannerBg from "@/public/assets/images/service1.jpg";
 
 export default function SectionBanner() {
   return (
@@ -19,8 +19,10 @@ export default function SectionBanner() {
       <div className="z-10">
         <h1 className="text-4xl md:text-5xl font-bold"></h1>
         <div className="mt-4 text-lg flex justify-center items-center gap-2">
-          <span className="text-gray-300">Service</span>
-         
+          <span className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg">
+            Service
+          </span>
+
           <span className="text-white font-medium"></span>
         </div>
       </div>
